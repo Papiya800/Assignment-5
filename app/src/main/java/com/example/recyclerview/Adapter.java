@@ -32,7 +32,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false);
 
         // Passing view to ViewHolder
-        Adapter.ViewHolder viewHolder = new Adapter.ViewHolder(view);
+        Adapter.ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
 
@@ -53,7 +53,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
 
     // Initializing the Views
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView images;
         TextView text;
 
